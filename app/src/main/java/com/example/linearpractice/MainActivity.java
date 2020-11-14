@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext() , Grid.class));
             }
         });
+        grid.setVisibility(View.INVISIBLE);
 
     }
 }
