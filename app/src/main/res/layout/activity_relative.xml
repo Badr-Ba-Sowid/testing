@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Relative">
+
+    <TextView
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingTop="5dp"
+        android:background="#EA638C"
+        android:text="This is a Relative Layout Page"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0C0A3E"
+        android:text="Text View #1"
+        android:layout_below="@+id/main"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main"
+        android:text="Text View #2"
+        android:textColor="#0C0A3E"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/tv1"/>
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv1"
+        android:layout_alignParentRight="true"
+        android:textColor="#0C0A3E"
+        android:paddingTop="50dp"
+        android:text="Text View #3"/>
+    <TextView
+        android:id="@+id/nametv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your name:"
+        android:layout_below="@id/tv3"
+        android:paddingTop="50dp"
+        android:layout_alignParentLeft="true"/>
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/nametv"
+        android:layout_below="@id/tv3"
+        />
+
+    <Button
+        android:id="@+id/backbutton"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/name"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:background="#B33F62"
+        android:text="BACK TO HOME"
+        android:textStyle="bold" />
+
+</RelativeLayout>
